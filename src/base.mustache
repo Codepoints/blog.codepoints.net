@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Codepoints Blog</title>
+  <link rel="shortcut icon" href="//codepoints.net/favicon.io">
+  <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic" rel="stylesheet">
+  <link href="//codepoints.net/static/css/codepoints.css" rel="stylesheet">
+  <link href="src/blog.css" rel="stylesheet">
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <header class="hd">
+      <nav>
+        <ul class="primary">
+          <li class="start"><a rel="start" href="https://codepoints.net/">Start</a></li>
+          <li class="search"><a rel="search" href="https://codepoints.net/search">Search</a></li>
+          <li class="scripts"><a href="https://codepoints.net/scripts">Scripts</a></li>
+          <li class="random"><a href="https://codepoints.net/random">Random</a></li>
+          <li class="about"><a href="https://codepoints.net/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="payload front">
+      <h1>Codepoints</h1>
+      <p style="text-align:center;background:rgba(255,255,255,.3);padding:.5em">The Blog of <a href="https://codepoints.net">Codepoints.net</a></p>
+      <div id="posts">
+        <div class="bk" style="float:none;margin:0 auto;background:white;width:640px;">
+          {{#title}}<p><a href="index.html">Back to the Index</a></p>{{/title}}
+          {{#date}}<p>{{date}}</p>{{/date}}
+          {{#title}}<h2>{{title}}</h2>{{/title}}
+          {{{content}}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="ft">
+    <nav>
+      <p class="tx">This is Codepoints.net, a site dedicated to all things
+      characters, letters and Unicode. The site is run by <a
+      href="http://www.manuel-strehl.de">Manuel Strehl</a>. The content can be
+      <a href="//codepoints.net/about#this_site">freely reused</a> under the given terms. We’d
+      like to thank <a href="//codepoints.net/about#attribution">these fine people</a> for
+      making Codepoints.net possible. <a
+      href="https://github.com/Codepoints/Codepoints.net">Feedback and
+      contributions</a> are always welcome.</p>
+      <ul>
+        <li><a href="//codepoints.net">Start</a></li>
+        <li><a href="https://twitter.com/CodepointsNet"><i class="icon-twitter"></i> Twitter</a></li>
+        <li><a href="/"><i class="icon-book"></i> Blog</a></li>
+        <li><a href="//codepoints.net/about#this_site"><i class="icon-info-sign"></i> About</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script type="text/javascript">
+  var pkBaseURL = "https://stats.codepoints.net/";
+  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 5);
+  piwikTracker.trackPageView();
+  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script>
+  <noscript><img src="https://stats.codepoints.net/piwik.php?idsite=5" style="border:0" alt=""></noscript>
+</body>
+</html>
