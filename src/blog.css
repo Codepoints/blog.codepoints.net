@@ -223,3 +223,14 @@ ol.notes li.note blockquote a {
 }
 
 figure {margin: 0;}
+
+.bk:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.bk figure {
+  width: auto;
+}
