@@ -13,5 +13,6 @@ data = sanitizeHtml(data, {
 
 fs.writeFileSync('./current.json', JSON.stringify({
   content: data,
+  title: content.posts[0].title,
   url: 'https://blog.codepoints.net/'+content.posts[0].slug+'.html',
 }));
