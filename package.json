@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "hogan": "^1.0.2"
+  },
+  "dependencies": {
+    "sanitize-html": "^1.6.1"
   }
 }
