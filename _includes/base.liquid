@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{ title | escape }} – Codepoints Blog</title>
+    <link rel="shortcut icon" href="https://codepoints.net/favicon.ico">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml">
+  </head>
+  <body>
+    <header>
+      <p>The Blog of <a href="https://codepoints.net">Codepoints.net</a></p>
+    </header>
+    <main>
+      {%- if page.url != '/' -%}
+        <aside>
+          <p><a href="/">Back to the blog homepage</a></p>
+          {{ page.date }}
+        </aside>
+      {%- endif -%}
+      {{ content }}
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="https://codepoints.net">Start</a></li>
+          <li><a href="https://twitter.com/CodepointsNet">Twitter</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="https://codepoints.net/about#this_site">About</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+<script>var _paq=window._paq=window._paq||[];
+_paq.push(['disableCookies']);
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function(){
+var u="https://stats.codepoints.net/";
+_paq.push(['setTrackerUrl',u+'matomo.php']);
+_paq.push(['setSiteId','5']);
+var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];
+g.async=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);
+})()</script>
+  </body>
+</html>

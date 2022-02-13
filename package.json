@@ -1,17 +1,19 @@
 {
-  "name": "cps-blog",
+  "name": "codepoints-blog",
   "version": "1.0.0",
   "description": "",
-  "main": "compile.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "codepts:repos/cps-blog.git"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "hogan": "^1.0.2"
-  },
-  "dependencies": {
-    "sanitize-html": "^1.6.1"
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-rss": "^1.1.2"
   }
 }

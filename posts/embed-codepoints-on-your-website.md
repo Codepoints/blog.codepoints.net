@@ -1,14 +1,19 @@
-<p>We offer now a new service: Embed codepoints on your website. It’s quite
-simple: Just search for the codepoint you want, add <code>?embed</code> to its
-URL and put all this in an HTML iframe element:</p>
+---
+date: 2013-01-09T22:28:02
+title: "Embed Codepoints on Your Website"
+---
 
-<pre>&lt;iframe src="https://codepoints.net/U+0067?embed"
-        style="width: 100px; height: 100px;"&gt;
-&lt;/iframe&gt;</pre>
+We offer now a new service: Embed codepoints on your website. It’s quite
+simple: Just search for the codepoint you want, add `?embed` to its
+URL and put all this in an HTML iframe element:
 
-<p>The result is responsive, that means, it adapts itself automatically to fit
-the size you need it. From a small 24x24px icon to a full-sized info box, the
-HTML is the same. Some selected sizes:</p>
+    <iframe src="https://codepoints.net/U+0067?embed"
+            style="width: 100px; height: 100px;">
+    </iframe>
+
+The result is responsive, that means, it adapts itself automatically to fit the
+size you need it. From a small 24x24px icon to a full-sized info box, the HTML
+is the same. Some selected sizes:
 
 <div style="color: #bbb">
 200x26px:<br/><iframe src="https://codepoints.net/U+0067?embed" style="border:1px solid;width:200px;height:26px"></iframe><br/>

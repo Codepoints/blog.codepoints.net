@@ -1,0 +1,6 @@
+{
+  "layout": "base.liquid",
+  "permalink": "/{{ title | slug }}.html",
+  "published": true,
+  "tags": ["post"]
+}

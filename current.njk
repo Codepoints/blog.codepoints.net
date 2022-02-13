@@ -1,0 +1,9 @@
+---
+permalink: current.json
+---
+{% set latest = collections.post[0] -%}
+{
+"title": {{ latest.data.title | json_encode | safe }},
+"url": {{ latest.url | json_encode | safe }},
+"content": {{ latest.templateContent | json_encode | safe }}
+}
