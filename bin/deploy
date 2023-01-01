@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -euo pipefail
+
+DATE="$(date +%Y-%m-%d-%H-%M-%S)"
+SSH_HOST='codepts'
+
+echo TODO
