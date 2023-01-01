@@ -1,0 +1,43 @@
+name: create release
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '20*'
+      - 'deploy-*'
+  workflow_dispatch:
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out repository
+        uses: actions/checkout@v3
+
+      - name: set up node v16
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: install npm packages
+        run: npm ci --silent --audit false --fund false
+
+      - name: run 11ty
+        run: npx @11ty/eleventy
+        env:
+          NODE_ENV: production
+
+      - name: publish current version
+        run: "echo '${{ github.ref_name }}' > blog.codepoints.net/version.txt"
+
+      - name: create zip file for release
+        run: zip -r blog-codepoints blog.codepoints.net
+        if: startsWith(github.ref, 'refs/tags/')
+
+      - name: create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: blog-codepoints.zip
+        if: startsWith(github.ref, 'refs/tags/')
