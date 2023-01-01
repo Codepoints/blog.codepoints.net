@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    {% if page.description -%}
+    <meta name="description" content="{{ page.description }}">
+    {%- endif -%}
     <title>{{ title | escape }} – Codepoints Blog</title>
-    <link rel="shortcut icon" href="https://codepoints.net/favicon.ico">
-    <link rel="stylesheet" href="/css/blog.css">
+    <meta name="theme-color" content="#660000">
+    <link rel="icon" href="https://codepoints.net/favicon.ico">
+    <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="alternate" type="application/atom+xml" href="/feed.xml">
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <p>The Blog of <a href="https://codepoints.net">Codepoints.net</a></p>
     </header>
     <main>
@@ -22,11 +26,11 @@
       {{ content }}
     </main>
 
-    <footer>
+    <footer class="page-footer">
       <nav>
         <ul>
-          <li><a href="https://codepoints.net">Start</a></li>
-          <li><a href="https://twitter.com/CodepointsNet">Twitter</a></li>
+          <li><a href="https://codepoints.net">codepoints.net</a></li>
+          <li><a rel="me" href="https://typo.social/@codepoints">Mastodon</a></li>
           <li><a href="/">Blog</a></li>
           <li><a href="https://codepoints.net/about#this_site">About</a></li>
         </ul>

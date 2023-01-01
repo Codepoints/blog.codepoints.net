@@ -8,7 +8,8 @@
     "url": "https://blog.codepoints.net/",
     "feedUrl": "https://blog.codepoints.net/feed.xml",
     "author": {
-      "name": "Manuel Strehl"
+      "name": "Manuel Strehl",
+      "uri": "https://manuel-strehl.de/"
     }
   }
 }
@@ -23,6 +24,7 @@
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
+    <uri>{{ metadata.author.uri }}</uri>
   </author>
   {%- for post in collections.post | reverse -%}
     {%- if post.data.published -%}

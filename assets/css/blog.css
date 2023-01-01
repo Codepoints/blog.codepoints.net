@@ -1,0 +1,187 @@
+@font-face {
+  font-family: Literata;
+  src: url('../fonts/Literata.woff2') format('woff2-variations');
+  font-weight: 1 999;
+  font-display: optional;
+}
+
+@font-face {
+  font-family: Literata;
+  font-style: italic;
+  src: url('../fonts/Literata-Italic.woff2') format('woff2-variations');
+  font-weight: 1 999;
+  font-display: optional;
+}
+
+:root {
+  --font-mod: 1.25;
+  --font-family: Literata, Noto Serif, Droid Serif, Georgia, Times New Roman, Times, serif;
+  --font-family-alternate: Noto Sans, Droid Sans, Verdana, sans-serif;
+
+  --color-danger: #901;
+  --color-danger-muted: #eadadc;
+  --color-success: #190;
+  --color-success-muted: #dceada;
+  --color-neutral: #0007;
+
+  --color-input-text: #403c37;
+  --color-input-back: #ffffff;
+  --color-input-bord: #bbbbbb;
+
+  --color-back-bright: #ffffff;
+  --color-back-dim: #eeeeee;
+
+  --color-border: #dddddd;
+  --color-border-light: #eeeeee;
+  --color-border-medium: #bbbbbb;
+  --color-border-dark: #333333;
+
+  /* https://coolors.co/1b171c-ebf1e9-7f0a1e-670415-480410-17181c-f1f0e9-0a7f6c-046757-04483c */
+  --raisin-black: hsl(290, 10%, 10%);
+  --mint-cream: hsl(40, 37%, 99%);
+  --burgundy: hsl(350, 85%, 52%);
+  --rosewood: hsl(350, 93%, 36%);
+  --dark-sienna: hsl(350, 89%, 15%);
+  --eerie-black: hsl(230, 10%, 10%);
+  --alabaster: hsl(50, 22%, 93%);
+  --generic-viridian: hsl(170, 85%, 47%);
+  --bottle-green: hsl(170, 93%, 31%);
+  --blue-green-color-wheel: hsl(170, 89%, 15%);
+
+  --color-text: var(--raisin-black);
+  --color-back: var(--mint-cream);
+  --color-link: var(--rosewood);
+  --color-link-hover: var(--burgundy);
+  --color-hilite: var(--generic-viridian);
+
+  --hsl-backlight: 0, 0%, 100%;
+  --hsl-highlight: 0, 0%, 100%;
+  --hsl-shadow: 40, 20%, 10%;
+
+  --dimmed: .75;
+
+  color-scheme: light;
+}
+
+:root {
+  font: normal 16px/1.333 var(--font-family);
+  font-feature-settings: "kern" on;
+  text-rendering: optimizeLegibility;
+  scrollbar-gutter: stable;
+}
+
+body {
+  background: var(--color-back);
+  color: var(--color-text);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  scrollbar-gutter: stable;
+}
+
+a {
+  color: var(--color-link);
+  transition: color .3s;
+}
+
+a:focus, a:hover {
+  color: var(--color-link-hover);
+}
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote em,
+blockquote i {
+  font-style: normal;
+}
+
+/* font sizes and typographic adaptions */
+
+.h1,
+h1 {
+  font-size: calc(1rem * var(--font-mod) * var(--font-mod) * var(--font-mod) * var(--font-mod) * var(--font-mod));
+  font-weight: normal;
+  font-variation-settings: "opsz" 35;
+}
+
+.h2,
+h2 {
+  font-size: calc(1rem * var(--font-mod) * var(--font-mod) * var(--font-mod) * var(--font-mod));
+  font-weight: normal;
+}
+
+.h3,
+h3 {
+  font-size: calc(1rem * var(--font-mod) * var(--font-mod) * var(--font-mod));
+  font-weight: normal;
+}
+
+.h4,
+h4 {
+  font-size: calc(1rem * var(--font-mod) * var(--font-mod));
+}
+
+.text_big,
+.h5,
+h5 {
+  font-size: calc(1rem * var(--font-mod));
+}
+
+.page-footer,
+small, .text_small, figcaption {
+  font-size: calc(1rem / var(--font-mod));
+  font-family: var(--font-family-alternate);
+}
+
+.page-header {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.page-header > * {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.page-footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.page-footer > * {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.page-footer > * + * {
+  margin-top: 1rem;
+}
+
+.page-footer ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 2rem;
+}
+
+.page-footer ul a {
+  display: block;
+  padding: .5em;
+  margin: -.5rem;
+}
+
+.page-footer a svg {
+  vertical-align: middle;
+}
+
+main {
+  margin: 1em auto;
+  max-width: 65rem;
+}
