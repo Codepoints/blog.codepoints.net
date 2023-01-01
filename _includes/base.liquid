@@ -23,8 +23,11 @@
       {%- if page.url != '/' -%}
         <aside>
           <p><a href="/">Back to the blog homepage</a></p>
-          {{ page.date }}
+          {{ page.date.toUTCString | date: "%Y-%m-%d" }}
         </aside>
+        {%- if title -%}
+          <h1>{{ title }}</h1>
+        {%- endif -%}
       {%- endif -%}
       {{ content }}
     </main>

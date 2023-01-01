@@ -2,6 +2,7 @@
 date: 2013-07-16T06:40:00
 title: "Brand-new Unicode REST API"
 tags: ["unicode", "rest api", "json", "cors", "github", "http"]
+description: Our REST API is here and ready for you to play with it.
 ---
 
 This is a buzzword-filled post to say the least. We have just published our
