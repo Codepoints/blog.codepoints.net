@@ -145,6 +145,12 @@ small, .text_small, figcaption {
 .page-header > * {
   max-width: 65rem;
   margin: 0 auto;
+  display: block;
+}
+
+.page-header > a > img {
+  float: left;
+  margin-right: 1rem;
 }
 
 .page-footer {
