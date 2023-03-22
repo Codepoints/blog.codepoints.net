@@ -11,7 +11,7 @@ permalink: /
 
 <ul>
   {%- for post in collections.post reversed -%}
-    {%- if post.data.published -%}
+    {%- if post.data.published or env.ENV == 'development' -%}
       <li>
         <a href="{{ post.url }}">
           <time>{{ post.data.date.toUTCString | date: "%Y-%m-%d" }}</time>
