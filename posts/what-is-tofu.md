@@ -15,19 +15,19 @@ tags:
 </figure>
 
 
-You might know those pervasive white blocks of coagulated soy milk called
+You might know those prevalent white blocks of coagulated soy milk called
 _tofu_ from cooking. But did you know that this is also a typographical
 technical term?
 
 ## Tofu on the screen
 
-When a computer decodes text for display it needs to decide on a glyph from
-an installed font to show for each character. It might well be, however, that
-for a given character no supporting font is installed on the system. In this
+When a computer decodes text for display it searches for a glyph from
+an installed font for each character. It is possible, though, that
+no supporting font is installed on the system for a given character. In this
 case the software reaches for a special glyph in the default font [named
 `.notdef`][1]. Sometimes this fallback glyph is just a simple white square.
 
-The effect is, though, that if you want to read text in a language, where the
+Now, if you want to read text in a language, where the
 glyphs are not present on your computer, the display looks something like this:
 
 > □□□□□ □□□□□ □□□□□ □□□ □□□□, □□□□□□□□□□□□ □□□□□□□□□□ □□□□.
@@ -44,13 +44,13 @@ stack you easily end up with a whole screen filled only with white boxes.
 ## The proof of the tofu is in the eating
 
 Today operating systems come with better internationalized base fonts
-pre-installed. And to end the phenomenon once and for ever an initiative
+pre-installed. And to end the phenomenon once and for all an initiative
 started by Google and aided by Adobe wants to provide a font for each character
 in the Unicode standard, the [Noto font family](https://fonts.google.com/noto).
 
 The name “Noto” is actually [an abbreviation][2] of the font’s aim: “No Tofu”.
-Together with GNU Unifont this font family also powers the character display
-on codepoints.net almost exclusively.
+Together with [GNU Unifont][unifont] this font family also powers the character
+display on codepoints.net almost exclusively.
 
 If you stumble upon tofu nowadays, it is in most cases due to [new
 emojis][em-latest] being codified by Unicode, but not being implemented in your
@@ -59,7 +59,7 @@ issue than it was in the 90’s.
 
 ## Origins
 
-The earliest occurences of the term “tofu” with the meaning of garbled text are
+The earliest occurrences of the term “tofu” with the meaning of garbled text are
 lost in the mist of time. The Noto Font project [started in 2014][3], and
 most search results (including for the Japanese term “豆腐”) date from the
 following years. In 2014 it was [added][4] to the Wiktionary and started to
@@ -82,7 +82,7 @@ evils that regularly happen to electronic text. At least it can be made
 readable again by finding and installing a suitable font.
 
 If the content is mangled due to wrongly specified encodings, though, it might
-be irrevertably damaged. This phenomenon is called [Mojibake][8]. It appears,
+be irreversibly damaged. This phenomenon is called [Mojibake][8]. It appears,
 when the changing and/or interpretation of font encoding went wrong. You might
 have encountered a strange “Ã¤” instead of an “ä”. Fixing this problem [is
 often extremely tedious][9].
@@ -108,3 +108,4 @@ out, what your tofu is actually made of.
 [9]: https://text-mode.tumblr.com/post/31409503070/russian-postmen-fix-an-error-caused-by-an
 [10]: https://twitter.com/FakeUnicode/status/1194628388473819137
 [em-latest]: https://emojipedia.org/draft-emojis/
+[unifont]: https://unifoundry.com/unifont/
