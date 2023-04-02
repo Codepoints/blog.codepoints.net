@@ -1,6 +1,9 @@
 ---
 date: 2012-07-14T22:15:00
 title: "What are Digraphs?"
+description: "A powerful way to extend your grasp into Unicode with a combination of ASCII letters"
+tags:
+  - codepoints academy
 ---
 
 ![a screenshot of a code point detail page pointing to the digraph entry for this code point](img/tumblr_m7683f2XqC1r08iii.png)

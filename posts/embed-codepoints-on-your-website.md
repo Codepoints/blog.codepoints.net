@@ -1,6 +1,9 @@
 ---
 date: 2013-01-09T22:28:02
 title: "Embed Codepoints on Your Website"
+description: "Now you can use the information of codepoints.net to enhance your own articles."
+tags:
+  - machine room
 ---
 
 We offer now a new service: Embed codepoints on your website. It’s quite

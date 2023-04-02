@@ -1,6 +1,9 @@
 ---
 date: 2013-01-02T10:28:16
 title: "Learning Chinese One Codepoint at a Time"
+description: "Learn with us the 100 most used Chinese characters!"
+tags:
+  - codepoints academy
 ---
 
 Yesterday we started to post the 100 Chinese characters most used in
