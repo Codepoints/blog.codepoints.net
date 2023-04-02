@@ -201,20 +201,30 @@ img {
 .posts {
   list-style: none;
   padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  justify-content: center;
+}
+@media (min-width: 800px) {
+  .posts {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.posts li {
-  margin: 1rem 0;
-}
-
-.posts li + li {
-  border-top: 1px solid;
-  padding-top: 1rem;
+.posts > li {
+  margin: 0;
+  display: flex;
 }
 
 .posts a {
   text-decoration: none;
   color: inherit;
+  flex-grow: 1;
+  padding: 1rem;
+  background: #0000000a;
+  box-shadow: 10px 10px 20px hsla(var(--hsl-shadow), .20),
+              -10px -10px 20px var(--color-input-back);
 }
 
 .posts a h2 {
