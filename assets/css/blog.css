@@ -132,6 +132,7 @@ h5 {
 
 .page-footer,
 .posts time,
+article aside,
 small, .text_small, figcaption {
   font-size: calc(1rem / var(--font-mod));
   font-family: var(--font-family-alternate);

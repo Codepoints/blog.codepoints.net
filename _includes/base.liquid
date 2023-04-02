@@ -20,16 +20,25 @@
       <p>The Blog of <a href="https://codepoints.net">Codepoints.net</a></p>
     </header>
     <main>
-      {%- if page.url != '/' -%}
-        <aside>
-          <p><a href="/">Back to the blog homepage</a></p>
-          {{ page.date.toUTCString | date: "%Y-%m-%d" }}
-        </aside>
-        {%- if title -%}
-          <h1>{{ title }}</h1>
+      <article>
+        {%- if page.url != '/' -%}
+          <nav>
+            <p><a href="/">Back to the blog homepage</a></p>
+          </nav>
+          {%- if title -%}
+            <h1>{{ title }}</h1>
+            <aside>
+              Published: <time>{{ page.date | date: "%Y-%m-%d" }}</time>
+            </aside>
+          {%- endif -%}
         {%- endif -%}
-      {%- endif -%}
-      {{ content }}
+        {{ content }}
+        {%- if page.url != '/' -%}
+          <footer>
+            <p><a href="/">Back to the blog homepage</a></p>
+          </footer>
+        {%- endif -%}
+      </article>
     </main>
 
     <footer class="page-footer">
