@@ -4,41 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>{{ title | escape }} – Codepoints Blog</title>
-    {% if description -%}
-      <meta name="description" content="{{ description }}">
-    {%- endif %}
+    {% block meta %}
+    {% endblock %}
     <meta name="theme-color" content="#660000">
     <link rel="icon" href="https://codepoints.net/favicon.ico">
-    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
     <link rel="alternate" type="application/atom+xml" href="/feed.xml">
   </head>
   <body>
     <header class="page-header">
       <a href="/" rel="home">
-        <img src="assets/images/icon.svg" width="64" height="64" alt="home page">
+        <img src="/assets/images/icon.svg" width="64" height="64" alt="home page">
       </a>
       <p>The Blog of <a href="https://codepoints.net">Codepoints.net</a></p>
     </header>
     <main>
-      <article>
-        {%- if page.url != '/' -%}
-          <nav>
-            <p><a href="/">Back to the blog homepage</a></p>
-          </nav>
-          {%- if title -%}
-            <h1>{{ title }}</h1>
-            <aside>
-              Published: <time>{{ page.date | date: "%Y-%m-%d" }}</time>
-            </aside>
-          {%- endif -%}
-        {%- endif -%}
-        {{ content }}
-        {%- if page.url != '/' -%}
-          <footer>
-            <p><a href="/">Back to the blog homepage</a></p>
-          </footer>
-        {%- endif -%}
-      </article>
+      {% block content %}
+      {% endblock %}
     </main>
 
     <footer class="page-footer">

@@ -1,0 +1,14 @@
+{% extends "base.njk" %}
+
+{% block meta %}
+  {% if description %}
+    <meta name="description" content="{{ description }}">
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  <article>
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </article>
+{% endblock %}

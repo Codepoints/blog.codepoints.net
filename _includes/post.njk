@@ -1,0 +1,23 @@
+{% extends "base.njk" %}
+
+{% block meta %}
+  {% if description %}
+    <meta name="description" content="{{ description }}">
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  <article>
+    <nav>
+      <p><a href="/">Back to the blog homepage</a></p>
+    </nav>
+    <h1>{{ title }}</h1>
+    <aside>
+      Published: <time>{{ page.date.toISOString() | truncate(10, true, '') }}</time>
+    </aside>
+    {{ content | safe }}
+    <footer>
+      <p><a href="/">Back to the blog homepage</a></p>
+    </footer>
+  </article>
+{% endblock %}

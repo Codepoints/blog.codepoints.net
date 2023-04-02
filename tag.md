@@ -1,14 +1,21 @@
 ---
-layout: index.njk
+layout: tag.njk
 eleventyExcludeFromCollections: true
-title: Codepoints
-permalink: /
+permalink: "tag/{{ tag.name | slugify }}.html"
+eleventyComputed:
+  title: "{{ tag.name }}"
+pagination:
+  data: tags
+  size: 1
+  alias: tag
 ---
 
-Welcome to the blog about all things characters, letters and Unicode!
+{% if tag.description %}
+  <p>{{ tag.description }}</p>
+{% endif %}
 
 <ul class="posts">
-  {%- for post in collections.post reversed -%}
+  {%- for post in collections[tag.tag] reversed -%}
     {%- if post.data.published or env.ENV == 'development' -%}
       <li>
         <a href="{{ post.url }}">

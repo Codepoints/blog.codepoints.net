@@ -1,0 +1,12 @@
+[
+  {
+    "tag": "codepoints academy",
+    "name": "Codepoints Academy",
+    "description": "Learn about Unicode, characters, fonts, encodings and writing systems and discover new and fascinating pieces."
+  },
+  {
+    "tag": "machine room",
+    "name": "Machine Room",
+    "description": "Take a peak behind the technical side of codepoints.net and learn how the software of this site works under the hood."
+  }
+]
