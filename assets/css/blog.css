@@ -131,6 +131,7 @@ h5 {
 }
 
 .page-footer,
+.posts time,
 small, .text_small, figcaption {
   font-size: calc(1rem / var(--font-mod));
   font-family: var(--font-family-alternate);
@@ -194,4 +195,38 @@ main {
 
 img {
   max-width: 100%;
+}
+
+.posts {
+  list-style: none;
+  padding-left: 0;
+}
+
+.posts li {
+  margin: 1rem 0;
+}
+
+.posts li + li {
+  border-top: 1px solid;
+  padding-top: 1rem;
+}
+
+.posts a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.posts a h2 {
+  color: var(--color-link);
+  transition: color .3s;
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+.posts a:focus h2,
+.posts a:hover h2 {
+  color: var(--color-link-hover);
+}
+
+.posts time {
+  display: block;
 }

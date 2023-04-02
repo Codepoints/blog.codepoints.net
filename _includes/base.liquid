@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    {% if page.description -%}
-    <meta name="description" content="{{ page.description }}">
-    {%- endif -%}
     <title>{{ title | escape }} – Codepoints Blog</title>
+    {% if description -%}
+      <meta name="description" content="{{ description }}">
+    {%- endif %}
     <meta name="theme-color" content="#660000">
     <link rel="icon" href="https://codepoints.net/favicon.ico">
     <link rel="stylesheet" href="assets/css/blog.css">
