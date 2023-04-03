@@ -1,7 +1,7 @@
 ---
 layout: tag.njk
 eleventyExcludeFromCollections: true
-permalink: "tag/{{ tag.name | slugify }}.html"
+permalink: "tag/{{ tag.tag | slugify }}.html"
 eleventyComputed:
   title: "{{ tag.name }}"
 pagination:
