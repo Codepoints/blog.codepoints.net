@@ -90,7 +90,9 @@ often extremely tedious][9].
 But even tofu itself is not all made equal. The Fake Unicode twitter account
 [detailed different ways][10] fonts can handle missing glyphs, from terrible
 (“show nothing at all”) to actually somewhat useful (“show the hex code of the
-unknown character”).
+unknown character”). If you want to know, whether a brand-new emoji will show
+as tofu on Android or iOS, you can consult [Is It Tofu?][isittofu] for an
+answer (including a rough percentage of users that will see the emoji).
 
 So, all is not lost, if you encounter these blocks again in the future. And to
 make use of them even if they are illegible on your system, try pasting them
@@ -109,3 +111,4 @@ out, what your tofu is actually made of.
 [10]: https://twitter.com/FakeUnicode/status/1194628388473819137
 [em-latest]: https://emojipedia.org/draft-emojis/
 [unifont]: https://unifoundry.com/unifont/
+[isittofu]: https://tofu.quest/
