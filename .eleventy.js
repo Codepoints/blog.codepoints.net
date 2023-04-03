@@ -2,6 +2,7 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const Image = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
+  const outputDir = 'blog.codepoints.net';
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addPassthroughCopy('img');
@@ -13,6 +14,7 @@ module.exports = function(eleventyConfig) {
     const metadata = await Image(src, {
       widths: [240, 480, 960],
       formats: ['webp', 'jpeg'],
+      outputDir: `${outputDir}/img`,
     });
     return Image.generateHTML(metadata, {
       alt,
@@ -24,7 +26,7 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      output: 'blog.codepoints.net',
+      output: outputDir,
     },
   };
 };
