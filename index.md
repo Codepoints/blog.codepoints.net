@@ -2,6 +2,7 @@
 layout: index.njk
 eleventyExcludeFromCollections: true
 title: Codepoints
+description: "The blog about all things characters, letters and Unicode"
 permalink: /
 ---
 
