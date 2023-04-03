@@ -13,7 +13,13 @@
     </nav>
     <h1>{{ title }}</h1>
     <aside>
-      Published: <time>{{ page.date.toISOString() | truncate(10, true, '') }}</time>
+      Published: <time>{{ page.date.toISOString() | truncate(10, true, '') }}</time>.
+      Tags: {% for tag in tags -%}
+        {%- if tag != 'post' -%}
+          <a href="/tag/{{ tag | slugify }}.html">{{ tag }}</a>
+          {%- if not loop.last -%}, {% endif -%}
+        {%- endif -%}
+      {%- endfor -%}
     </aside>
     {{ content | safe }}
     <footer>

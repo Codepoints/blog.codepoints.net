@@ -5,7 +5,7 @@ permalink: "tag/{{ tag.tag | slugify }}.html"
 eleventyComputed:
   title: "{{ tag.name }}"
 pagination:
-  data: tags
+  data: all_tags
   size: 1
   alias: tag
 ---
