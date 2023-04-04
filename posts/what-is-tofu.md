@@ -52,10 +52,17 @@ The name “Noto” is actually [an abbreviation][2] of the font’s aim: “No 
 Together with [GNU Unifont][unifont] this font family also powers the character
 display on codepoints.net almost exclusively.
 
-If you stumble upon tofu nowadays, it is in most cases due to [new
+In day-to-day use tofu is luckily becoming less of an issue than it was in
+the 90’s. If you stumble upon it nowadays, it is mostly due to [new
 emojis][em-latest] being codified by Unicode, but not being implemented in your
-platform’s emoji font. In day-to-day use tofu is luckily becoming less of an
-issue than it was in the 90’s.
+platform’s emoji font.
+
+Another situation where you might encounter a variant of tofu today is, when
+a web font hasn’t got all glyphs to render a specific word. The browser will
+then substitute the missing characters with glyphs from other fonts, which
+gives the text sometimes the impression of a ransom letter:
+
+> <big style="font-family:Times New Roman, serif">na<span style="font-family:Arial,sans-serif">ï</span>ve r<span style="font-family:Arial,sans-serif">é</span>sum<span style="font-family:Arial,sans-serif">é</span></big>
 
 ## Origins
 
@@ -98,6 +105,12 @@ So, all is not lost, if you encounter these blocks again in the future. And to
 make use of them even if they are illegible on your system, try pasting them
 in the [codepoints.net search field](https://codepoints.net/search) to find
 out, what your tofu is actually made of.
+
+## Thanks!
+
+With special thanks to [Andrew Cunningham](https://typo.social/@enablelanguages)
+and [Chris Lilley](https://mastodon.social/@svgeesus) for their input to this
+post!
 
 [1]: https://learn.microsoft.com/de-de/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
 [2]: https://en.wikipedia.org/wiki/Noto_fonts#Etymology
