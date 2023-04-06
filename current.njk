@@ -1,7 +1,7 @@
 ---
 permalink: current.json
 ---
-{% set latest = collections.post[0] -%}
+{% set latest = collections.post | last -%}
 {
 "title": {{ latest.data.title | json_encode | safe }},
 "url": {{ latest.url | json_encode | safe }},
