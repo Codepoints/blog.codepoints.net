@@ -108,9 +108,9 @@ out, what your tofu is actually made of.
 
 ## Thanks!
 
-With special thanks to [Andrew Cunningham](https://typo.social/@enablelanguages)
-and [Chris Lilley](https://mastodon.social/@svgeesus) for their input to this
-post!
+With special thanks to [Andrew Cunningham](https://typo.social/@enablelanguages),
+[Chris Lilley](https://mastodon.social/@svgeesus), and [Richard
+Ishida](https://typo.social/@ri) for their input to this post!
 
 [1]: https://learn.microsoft.com/de-de/typography/opentype/spec/recom#glyph-0-the-notdef-glyph
 [2]: https://en.wikipedia.org/wiki/Noto_fonts#Etymology
