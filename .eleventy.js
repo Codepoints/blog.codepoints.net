@@ -30,6 +30,21 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addShortcode('cp', async function(int, width=16) {
+    let hex = (typeof int === 'number'? int.toString(16) : int).toUpperCase();
+    while (hex.length < 4) {
+      hex = '0' + hex;
+    }
+    return `<a class="ln cp" href="https://codepoints.net/U+${hex}" data-cp="U+${hex}">U+${hex}</a>`;
+    //const title = (await fetch(`https://codepoints.net/api/v1/codepoint/${hex}?property=na`).then(response => response.json()))?.na || '';
+    //return `<a class="ln cp" href="https://codepoints.net/U+${hex}" data-cp="U+${hex}">
+    //  <svg width="${width}" height="${width}" class="cpfig__img">
+    //    <use href="https://codepoints.net/image/${hex.replace(/..$/, '00')}.svg#U${hex}"/>
+    //  </svg>
+    //  <span class="title">${title}</span>
+    //</a>`;
+  });
+
   return {
     dir: {
       output: outputDir,
