@@ -1,9 +1,10 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const Image = require("@11ty/eleventy-img");
 const markdownIt = require('markdown-it');
+const emoji = require('markdown-it-emoji').full;
 
 const md = markdownIt({html: true})
-        .use(require('markdown-it-emoji'));
+        .use(emoji);
 
 module.exports = function(eleventyConfig) {
   const outputDir = 'blog.codepoints.net';
