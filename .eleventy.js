@@ -17,14 +17,15 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter('json_encode', s => JSON.stringify(s));
 
-  eleventyConfig.addShortcode('image', async function(src, alt, sizes='', loading='') {
+  eleventyConfig.addShortcode('image', async function(src, alt, sizes='', loading='', width=null) {
     const metadata = await Image(src, {
-      widths: [240, 480, 960],
+      widths: width? [width*2, width] : [240, 480, 960],
       formats: ['webp', 'jpeg'],
       outputDir: `${outputDir}/img`,
     });
     return Image.generateHTML(metadata, {
       alt,
+      width,
       sizes,
       loading,
       decoding: 'async',
