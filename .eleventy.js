@@ -2,6 +2,8 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const Image = require("@11ty/eleventy-img");
 const markdownIt = require('markdown-it');
 const emoji = require('markdown-it-emoji').full;
+const crypto = require('crypto');
+const fs = require('fs');
 
 const md = markdownIt({html: true})
         .use(emoji);
@@ -45,6 +47,25 @@ module.exports = function(eleventyConfig) {
     //  </svg>
     //  <span class="title">${title}</span>
     //</a>`;
+  });
+
+  eleventyConfig.addFilter("bust", async (url) => {
+    const [urlPart, paramPart] = url.split("?");
+    const params = new URLSearchParams(paramPart || "");
+    const relativeUrl = (urlPart.charAt(0) == "/") ? urlPart.substring(1): urlPart;
+
+    const hasher = new Promise((res, rej) => {
+      const hash = crypto.createHash('md5');
+      const rStream = fs.createReadStream(relativeUrl);
+      rStream.on('data', (data) => {
+        hash.update(data);
+      });
+      rStream.on('end', () => {
+        res(hash.digest('hex'));
+      });
+    });
+    params.set("v", await hasher);
+    return `${urlPart}?${params}`;
   });
 
   return {
