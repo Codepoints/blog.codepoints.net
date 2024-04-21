@@ -19,7 +19,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addShortcode('image', async function(src, alt, sizes='', loading='', width=null) {
     const metadata = await Image(src, {
-      widths: width? [width*2, width] : [240, 480, 960],
+      widths: width? [width] : [240, 480, 960],
       formats: ['webp', 'jpeg'],
       outputDir: `${outputDir}/img`,
     });
