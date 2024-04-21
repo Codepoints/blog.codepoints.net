@@ -4,7 +4,7 @@ set -euo pipefail
 
 DATE="$(date +%Y-%m-%d-%H-%M-%S)"
 RELEASE_URL='https://github.com/codepoints/blog.codepoints.net/releases/latest/download/blog-codepoints.zip'
-SSH_HOST='codepts'
+SSH_HOST='codepoints_live'
 
 echo "> create tag deploy-$DATE" >&2
 git tag "deploy-$DATE"

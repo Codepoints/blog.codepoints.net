@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: set up node v16
-        uses: actions/setup-node@v3
+      - name: set up node v20
+        uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "20"
 
       - name: install npm packages
         run: npm ci --silent --audit false --fund false
@@ -36,7 +36,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
 
       - name: create release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: blog-codepoints.zip
         if: startsWith(github.ref, 'refs/tags/')
