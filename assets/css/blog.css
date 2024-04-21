@@ -241,3 +241,16 @@ img {
 .posts time {
   display: block;
 }
+
+table {
+  border-spacing: 0;
+}
+
+td, th {
+  text-align: left;
+  padding: .5em .5em;
+}
+
+tbody td, tbody th {
+  border-top: 1px solid #0003;
+}
