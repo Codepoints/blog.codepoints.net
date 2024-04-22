@@ -160,8 +160,8 @@ are used to build a flag emoji from a pair of them.
 
 Unless when they aren’t. See, the <del>UK</del>, um, ... I mean <del>GB</del>, or...
 the ... Commonw... this entity that encompasses parts of the British Isles had
-needs unmet by this definition. And to encode the English, Welsh, Scottish and
-Northern-Irish flags, Unicode went back to the drawing board and pulled
+needs unmet by this definition. And to encode the English, Welsh, and Scottish
+flags, Unicode went back to the drawing board and pulled
 _another_ set of code points out of their hat.
 
 > 4. Regional flags consist of the Black Flag {% cp "1F3F4" %} and a series of
@@ -176,12 +176,12 @@ flags.
 
 There are times when you want to combine two emoji concepts to form another
 emoji. For example, if you want to represent a woman mechanic :woman_mechanic:,
-you could use :woman: and :mechanic: somehow. And indeed this is how the emoji
+you could use :woman: and :wrench: somehow. And indeed this is how the emoji
 is defined, with the magic codepoint {% cp "200D" %} in between both.
 
 ```
 U+1F469 + U+200D + U+1F527 = Woman Mechanic emoji
-Woman     ZWJ      Mechanic
+Woman     ZWJ      Wrench
 ```
 
 U+200D is named the “zero-width joiner” or ZJW for short. It’s original use
