@@ -1,7 +1,6 @@
 ---
-date: 2024-04-21
+date: 2024-04-22
 title: "Emojis under the Hood"
-published: false
 description: "Getting those nice little images to appear is sometimes surprisingly tricky."
 tags:
   - codepoints academy
@@ -20,7 +19,7 @@ Some love them, some loathe them, but emojis are now indisputably a central
 part of the day-to-day communication of billions of people around the world.
 Since their [invention in the late 90’s][eevee-history] their number grew
 from 176, a set that made it into the [Museum of Modern Arts][moma-emoji], to
-far [over 3,600][unicode-count] (as of April 2023).
+far [over 3,700][unicode-count] (as of April 2024).
 
 Their incorporation into the Unicode standard was flanked by more and more
 requests to extend their expressiveness and their adaptability, and by
@@ -80,7 +79,7 @@ the actual need.
 ## Anatomy of an Emoji
 
 Let‘s go back to the technical report #51 and the special properties mentioned
-above. Those properties are specified in chapter 1.4. They comprise:
+above. They are specified in chapter 1.4 and comprise:
 
 * `Emoji`: code points with this property can be an emoji or be part of an emoji
 * `Emoji_Presentation`: a single emoji code point can be either a (usually)
@@ -117,7 +116,7 @@ monochromous “normal glyph” mode.
 
 {% image "img/vs.png", "a 2×3 table that shows the rendering of two emojis without any, with U+FE0F and with U+FE0E added. Both are colorful in the second and monochromous in the third row, but differ in the first row.", "(max-width: 512px) 256px, 512px", "lazy", 512 %}
 
-To decide whether a certain string is definitively an emoji or only maybe,
+To describe whether a certain string is definitively an emoji or only maybe,
 Unicode uses the labels “fully qualified” (yep, definitively rendered as an emoji!),
 “unqualified” (nope, surely not rendered as an emoji) and “minimally qualified” (¯\\_(ツ)_/¯
 might become an emoji, if you add an U+FE0F).
@@ -302,14 +301,16 @@ expression increases your Javascript code base by [12.5 KB][js-emoji-regex].
 At the end of the day this is, however, often the most reasonable route to
 take for arbitrary texts.
 
-An alternative, if you author the source text, too, is to use shortcodes with
-colons, like `:palm_tree:`, and map them onto emojis. These codes are easier to
-match, and many new chat interfaces, from WhatsApp to Slack support them, too.
+If you are the author of the source text, too, it is often better to use
+placeholders instead of the actual emojis. Many new chat interfaces, from
+WhatsApp to Slack support so-called shortcodes with colons, like `:palm_tree:`,
+and map them onto emojis in a second step. These codes are easier to match in
+code, and sometimes even easier to write.
 
 ## Where Are We Standing Now?
 
-Charlotte Buff gives us a [quick overview][buff-emoji-length] how the string
-lengths are actually distributed between emojis.
+Charlotte Buff gives us a [good overview][buff-emoji-length] how the raw string
+lengths are distributed between emojis.
 
 But even now that we know how emojis are created it is [all but
 trivial][edent-quiz] to determine the actual composition of a given emoji. In
@@ -317,8 +318,8 @@ most cases the best way is to enter it into a [code point analyzer][cp-analyze]
 to see what it is actually made of, or to search it in the Emojipedia.
 
 Luckily in most cases it is completely irrelevant what code points make up a
-given emoji, exactly as irrelevant in day-to-day communication whether a “ä”
-is actually a {% cp "0061" %}-{% cp "0308" %} combination or a {% cp "00E4" %}.
+given emoji, exactly as irrelevant in day-to-day communication whether an “ä”
+is a {% cp "0061" %}-{% cp "0308" %} combination or a {% cp "00E4" %}.
 But if we encounter a strange situation where seemingly unexplicable emoji
 phenomenons appear we now have the tools to explain their nature.
 
