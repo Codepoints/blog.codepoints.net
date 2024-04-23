@@ -2,9 +2,20 @@
 date: 2013-07-16T06:40:00
 title: "Brand-new Unicode REST API"
 description: "Our REST API is here and ready for you to play with it."
+image:
+  src: "img/sander-weeteling-4I41IQtmSs0-unsplash.jpg"
+  alt: "a bunch of fiberglas strings, glowing in blue"
 tags:
   - machine room
 ---
+
+<figure>
+  {% image "img/sander-weeteling-4I41IQtmSs0-unsplash.jpg", "a bunch of fiberglas strings, glowing in blue", "960" %}
+  <figcaption>
+    Photo by <a href="https://unsplash.com/de/@sanderweeteling">Sander Weeteling</a> on
+    <a href="https://unsplash.com/de/fotos/blaue-lichter-leuchten-ein-4I41IQtmSs0">Unsplash</a>
+  </figcaption>
+</figure>
 
 This is a buzzword-filled post to say the least. We have just published our
 new REST API to Codepoints.net. See the [documentation at the Github

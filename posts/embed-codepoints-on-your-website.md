@@ -2,9 +2,20 @@
 date: 2013-01-09T22:28:02
 title: "Embed Codepoints on Your Website"
 description: "Now you can use the information of codepoints.net to enhance your own articles."
+image:
+  src: "img/ryoji-iwata-5siQcvSxCP8-unsplash.jpg"
+  alt: "hand hovering over a puzzle game, holding a red puzzle piece"
 tags:
   - machine room
 ---
+
+<figure>
+  {% image "img/ryoji-iwata-5siQcvSxCP8-unsplash.jpg", "hand hovering over a puzzle game, holding a red puzzle piece", "960" %}
+  <figcaption>
+    Photo by <a href="https://unsplash.com/de/@ryoji__iwata">Ryoji Iwata</a> on
+    <a href="https://unsplash.com/de/fotos/person-holding-red-jigsaw-puzzle-5siQcvSxCP8">Unsplash</a>
+  </figcaption>
+</figure>
 
 We offer now a new service: Embed codepoints on your website. It’s quite
 simple: Just search for the codepoint you want, add `?embed` to its
