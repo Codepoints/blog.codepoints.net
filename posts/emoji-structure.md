@@ -339,7 +339,13 @@ structured as handy overview:
 
 _N.B._ The original Japanese plural of “emoji” is “emoji”, too. However,
 according to [the Emojipedia][emojipedia-emojis] the anglicised plural “emojis”
-has meanwhile also become OK. 🤓😎
+has meanwhile also become OK.
+
+----
+
+_P.S._ Many thanks to [Terence Eden](https://mastodon.social/@edent) and
+[Charlotte Buff](https://mastodon.social/@CharlotteBuff) for spotting and
+correcting some errors!
 
 [eevee-history]: https://eev.ee/blog/2016/04/12/apple-did-not-invent-emoji/
 [moma-emoji]: https://www.moma.org/collection/works/196070
