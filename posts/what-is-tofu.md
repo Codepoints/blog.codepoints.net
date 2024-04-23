@@ -2,6 +2,9 @@
 date: 2023-03-31
 title: "What is Tofu?"
 description: "Trying to read text and instead seeing only little white boxes where letters should be? There’s a name for this phenomenon."
+image:
+  src: "img/taylor-kiser-3PHZi-5wKiI-unsplash.jpg"
+  alt: "several blocks of real tofu readily prepared to be cooked"
 tags:
   - codepoints academy
 ---

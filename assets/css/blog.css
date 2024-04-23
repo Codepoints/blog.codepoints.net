@@ -142,12 +142,12 @@ small, .text_small, figcaption {
   margin-bottom: 1rem;
   padding: 1rem;
   border-bottom: 1px solid var(--color-border-light);
+  display: flex;
+  gap: 2rem;
 }
 
-.page-header > * {
-  max-width: 65rem;
-  margin: 0 auto;
-  display: block;
+.page-header > :first-child {
+  margin-inline-start: max(1rem, calc((100vw - 65rem) / 2));
 }
 
 .page-header > a > img {
@@ -191,11 +191,13 @@ small, .text_small, figcaption {
 
 main {
   margin: 1em auto;
+  padding-inline: 1rem;
   max-width: 65rem;
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .posts {
@@ -225,6 +227,15 @@ img {
   background: #0000000a;
   box-shadow: 10px 10px 20px hsla(var(--hsl-shadow), .20),
               -10px -10px 20px var(--color-input-back);
+}
+
+.posts a img {
+  display: block;
+  max-width: none;
+  width: calc(2rem + 100%);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: -1rem -1rem 1rem;
 }
 
 .posts a h2 {

@@ -2,6 +2,9 @@
 date: 2024-04-22
 title: "Emojis under the Hood"
 description: "Getting those nice little images to appear is sometimes surprisingly tricky."
+image:
+  src: "img/emoji-structure.jpg"
+  alt: "cogwheels in a machine with one cogwheel looking like a smiling emoji"
 tags:
   - codepoints academy
 ---
