@@ -180,7 +180,7 @@ flags.
 There are times when you want to combine two emoji concepts to form another
 emoji. For example, if you want to represent a woman mechanic :woman_mechanic:,
 you could use :woman: and :wrench: somehow. And indeed this is how the emoji
-is defined, with the magic codepoint {% cp "200D" %} in between both.
+is [defined][l2-zwj], with the magic codepoint {% cp "200D" %} in between both.
 
 ```
 U+1F469 + U+200D + U+1F527 = Woman Mechanic emoji
@@ -371,5 +371,6 @@ correcting some errors!
 [edent-flags]: https://shkspr.mobi/blog/2019/06/quirks-and-limitations-of-emoji-flags/
 [edent-quiz]: https://mastodon.social/@Edent/112302999448151018
 [buff-emoji-length]: https://charlottebuff.com/unicode/misc/emoji-length/
+[l2-zwj]: https://www.unicode.org/L2/L2015/15029r-zwj-emoji.pdf
 
 [cp-search-emoji]: https://codepoints.net/search?Emoji=1
