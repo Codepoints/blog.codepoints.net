@@ -13,7 +13,7 @@ title: "Contributors for translation needed"
 
 Hi!
 
-As [mentioned before](translating-codepoints-net.html) we want Codepoints.net
+As [mentioned before](translating-codepoints.net.html) we want Codepoints.net
 to be translated in as many languages as possible. For this to become true we
 registered [a project at
 Crowdin](https://crowdin.net/project/codepoints/invite), a collaborative
