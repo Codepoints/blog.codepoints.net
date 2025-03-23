@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-img": "^4.0.2",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^6.0.1",
+    "@11ty/eleventy-plugin-rss": "^2.0.3",
     "@11ty/eleventy-plugin-webc": "^0.11.0",
     "markdown-it": "^14.0.0",
     "markdown-it-emoji": "^3.0.0"
