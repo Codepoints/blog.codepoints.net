@@ -340,15 +340,16 @@ structured as handy overview:
 
 ----
 
-_N.B._ The original Japanese plural of “emoji” is “emoji”, too. However,
-according to [the Emojipedia][emojipedia-emojis] the anglicised plural “emojis”
-has meanwhile also become OK.
+_N.B._ The original Japanese plural of “emoji” is “emoji”, too. (That is,
+in the Japanese language nouns themselves do not have a number property at
+all.) However, according to [the Emojipedia][emojipedia-emojis] the anglicised
+plural “emojis” has meanwhile also become OK.
 
 ----
 
-_P.S._ Many thanks to [Terence Eden](https://mastodon.social/@edent) and
-[Charlotte Buff](https://mastodon.social/@CharlotteBuff) for spotting and
-correcting some errors!
+_P.S._ Many thanks to [Terence Eden](https://mastodon.social/@edent),
+[Charlotte Buff](https://mastodon.social/@CharlotteBuff) and Mark Vasilkov for
+spotting and correcting errors!
 
 [eevee-history]: https://eev.ee/blog/2016/04/12/apple-did-not-invent-emoji/
 [moma-emoji]: https://www.moma.org/collection/works/196070
