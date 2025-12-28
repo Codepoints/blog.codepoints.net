@@ -4,7 +4,7 @@ title: "Translating Codepoints.net"
 tags: [ "l10n" ]
 ---
 
-![the Rosetta stone](img/tumblr_makdd4HOTq1r08iii.jpg)
+![the Rosetta stone](../img/tumblr_makdd4HOTq1r08iii.jpg)
 
 With the latest changes we finished a large part of the translation
 infrastructure of Codepoints.net. There is also a German translation online

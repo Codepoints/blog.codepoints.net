@@ -10,7 +10,7 @@ tags:
 ---
 
 <figure>
-  {% image "img/emoji-structure.jpg", "cogwheels in a machine with one cogwheel looking like a smiling emoji", "960" %}
+  <img src="../img/emoji-structure.jpg" alt="cogwheels in a machine with one cogwheel looking like a smiling emoji" width="960">
   <figcaption>
     Photo by <a href="https://unsplash.com/@zoltantasi">Zoltan Tasi</a> on
     <a href="https://unsplash.com/de/fotos/CLJeQCr2F_A">Unsplash</a>, emoji
@@ -41,7 +41,7 @@ notice the counter going down by 7, although it looks like only a single
 character was added.
 
 <figure>
-  {% image "img/string_length.png", "screenshot of a text input field with a single emoji entered, below the text “Your string is 11 characters long”.", "960" %}
+  <img src="../img/string_length.png" alt="screenshot of a text input field with a single emoji entered, below the text “Your string is 11 characters long”." width="960">
   <figcaption>
     Where are the other 10 characters coming from? Screenshot from codebeautify.org.
   </figcaption>
@@ -117,7 +117,7 @@ The opposite is possible as well with these emojis. If you add a Variation
 Selector 15, {% cp "fe0e" %}, to any of them, they are forced into the
 monochromous “normal glyph” mode.
 
-{% image "img/vs.png", "a 2×3 table that shows the rendering of two emojis without any, with U+FE0F and with U+FE0E added. Both are colorful in the second and monochromous in the third row, but differ in the first row.", "(max-width: 512px) 256px, 512px", "lazy", 512 %}
+<img src="../img/vs.png" alt="a 2×3 table that shows the rendering of two emojis without any, with U+FE0F and with U+FE0E added. Both are colorful in the second and monochromous in the third row, but differ in the first row." sizes="(max-width: 512px) 256px, 512px" loading="lazy" width="512">
 
 To describe whether a certain string is definitively an emoji or only maybe,
 Unicode uses the labels “fully qualified” (yep, definitively rendered as an emoji!),
@@ -299,7 +299,7 @@ change what is or is not a flag emoji) and future extensions, it is all but
 trivial to detect emojis in a string of text. Doing this with a regular
 expression increases your Javascript code base by [12.5 KB][js-emoji-regex].
 
-{% image "img/emoji_regex.png", "screenshot of a code editor. The text is a very long regular expression on a wrapping line, that doesn’t even fit on the screenshot", "730px" %}
+<img src="../img/emoji_regex.png" alt="screenshot of a code editor. The text is a very long regular expression on a wrapping line, that doesn’t even fit on the screenshot" width="730">
 
 At the end of the day this is, however, often the most reasonable route to
 take for arbitrary texts.

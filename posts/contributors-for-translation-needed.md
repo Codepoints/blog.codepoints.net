@@ -4,7 +4,7 @@ title: "Contributors for translation needed"
 ---
 
 <figure style="float:right">
-  <img src="img/tumblr_mdg2cn5mN61r08iii.png">
+  <img src="../img/tumblr_mdg2cn5mN61r08iii.png" alt="Direct translation and transfer translation pyramid: a triangle with the three corners “source text”, “interlingua” and “target text” and connections between them">
   <figcaption>
     <small>Source: <a href="https://commons.wikimedia.org/wiki/File:Direct_translation_and_transfer_translation_pyramind.svg">Wikimedia
     Commons</a></small>

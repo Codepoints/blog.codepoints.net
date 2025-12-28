@@ -10,7 +10,7 @@ tags:
 ---
 
 <figure>
-  {% image "img/sander-weeteling-4I41IQtmSs0-unsplash.jpg", "a bunch of fiberglas strings, glowing in blue", "960" %}
+  <img src="../img/sander-weeteling-4I41IQtmSs0-unsplash.jpg" alt="a bunch of fiberglas strings, glowing in blue" width="960">
   <figcaption>
     Photo by <a href="https://unsplash.com/de/@sanderweeteling">Sander Weeteling</a> on
     <a href="https://unsplash.com/de/fotos/blaue-lichter-leuchten-ein-4I41IQtmSs0">Unsplash</a>

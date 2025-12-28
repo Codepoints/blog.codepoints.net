@@ -6,7 +6,7 @@ tags:
   - codepoints academy
 ---
 
-![a screenshot of a code point detail page pointing to the digraph entry for this code point](img/tumblr_m7683f2XqC1r08iii.png)
+<img alt="a screenshot of a code point detail page pointing to the digraph entry for this code point" src="../img/tumblr_m7683f2XqC1r08iii.png" width="960">
 
 Some codepoints show a mysterious line in the “Representations” section
 called “digraphs.” What does that code mean? It’s a way to enter this character

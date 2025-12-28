@@ -3,7 +3,7 @@ date: 2012-07-10T21:43:06
 title: "Searching from within your browser"
 ---
 
-![a screenshot of the search engine selection dropdown in firefox](img/tumblr_m6ys0ajaoZ1r08iii.png)
+<img alt="a screenshot of the search engine selection dropdown in firefox" src="../img/tumblr_m6ys0ajaoZ1r08iii.png" width="960">
 
 Did you know, that you can search codepoints directly from within your
 browser? In IE and Firefox you can add the Codepoints.net search as simply as

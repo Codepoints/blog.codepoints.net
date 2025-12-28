@@ -10,7 +10,7 @@ tags:
 ---
 
 <figure>
-  {% image "img/ryoji-iwata-5siQcvSxCP8-unsplash.jpg", "hand hovering over a puzzle game, holding a red puzzle piece", "960" %}
+  <img src="../img/ryoji-iwata-5siQcvSxCP8-unsplash.jpg" alt="hand hovering over a puzzle game, holding a red puzzle piece" width="960">
   <figcaption>
     Photo by <a href="https://unsplash.com/de/@ryoji__iwata">Ryoji Iwata</a> on
     <a href="https://unsplash.com/de/fotos/person-holding-red-jigsaw-puzzle-5siQcvSxCP8">Unsplash</a>

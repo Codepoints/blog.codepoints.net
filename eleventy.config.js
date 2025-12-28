@@ -1,16 +1,30 @@
+import crypto from 'node:crypto';
+import fs from 'node:fs';
+import path from 'node:path';
+
 import pluginRss from '@11ty/eleventy-plugin-rss';
 import Image from '@11ty/eleventy-img';
+
 import markdownIt from 'markdown-it';
 import { full as emoji } from 'markdown-it-emoji';
-import crypto from 'crypto';
-import fs from 'fs';
 
 const md = markdownIt({html: true})
         .use(emoji);
 
 export default function(eleventyConfig) {
   const outputDir = 'blog.codepoints.net';
+
   eleventyConfig.addPlugin(pluginRss);
+
+  eleventyConfig.addPlugin(Image.eleventyImageTransformPlugin, {
+    widths: [300, 600, 960, 'auto'],
+    formats: ['webp', 'jpeg', 'png', 'svg', 'auto'],
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `img/${name}-${id}.${width}.${format}`;
+    },
+  });
 
   eleventyConfig.setLibrary('md', md);
 
@@ -18,21 +32,6 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('assets');
 
   eleventyConfig.addFilter('json_encode', s => JSON.stringify(s));
-
-  eleventyConfig.addShortcode('image', async function(src, alt, sizes='', loading='', width=null) {
-    const metadata = await Image(src, {
-      widths: width? [width] : [240, 480, 960],
-      formats: ['webp', 'jpeg'],
-      outputDir: `${outputDir}/img`,
-    });
-    return Image.generateHTML(metadata, {
-      alt,
-      width,
-      sizes,
-      loading,
-      decoding: 'async',
-    });
-  });
 
   eleventyConfig.addShortcode('cp', async function(int, width=16) {
     let hex = (typeof int === 'number'? int.toString(16) : int).toUpperCase();

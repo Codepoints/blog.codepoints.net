@@ -14,7 +14,7 @@ Welcome to the blog about all things characters, letters and Unicode!
       <li>
         <a href="{{ post.url }}">
           {%- if post.data.image -%}
-            {% image post.data.image.src, post.data.image.alt, "505px" %}
+            <img src={{post.data.image.src}} alt={{post.data.image.alt}} width="505">
           {%- endif -%}
           <time>{{ post.page.date | date: "%Y-%m-%d" }}</time>
           <h2>{{ post.data.title }}</h2>

@@ -14,7 +14,7 @@ good time to follow [@CodepointsNet](https://twitter.com/CodepointsNet) on
 Twitter to get a free Chinese lesson every day.
 
 <figure style="float:left;margin-right:10px">
-  <img src="img/tumblr_inline_mfztspX2xg1r08iii.gif" alt="an animation of the Chinese character 龍 written stroke by stroke">
+  <img src="../img/tumblr_inline_mfztspX2xg1r08iii.gif" alt="an animation of the Chinese character 龍 written stroke by stroke">
   <figcaption>
     <small>Source: <a href="http://commons.wikimedia.org/wiki/File:%E9%BE%8D-order.gif">Wikimedia
     Commons</a>, Stroke Order Project</small>

@@ -10,7 +10,7 @@ tags:
 ---
 
 <figure>
-  {% image "img/taylor-kiser-3PHZi-5wKiI-unsplash.jpg", "several blocks of real tofu readily prepared to be cooked", "960" %}
+  <img src="../img/taylor-kiser-3PHZi-5wKiI-unsplash.jpg" alt="several blocks of real tofu readily prepared to be cooked" width="960">
   <figcaption>
     Photo by <a href="https://unsplash.com/@foodfaithfit">Taylor Kiser</a> on
     <a href="https://unsplash.com/de/fotos/3PHZi-5wKiI">Unsplash</a>

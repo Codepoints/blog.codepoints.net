@@ -3,7 +3,7 @@ date: 2012-07-05T21:50:00
 title: "Codepoints.net goes live"
 ---
 
-![](img/tumblr_m6pjdrYQke1r08iii.png)
+![](../img/tumblr_m6pjdrYQke1r08iii.png)
 
 Finally it’s time to push [Codepoints.net](https://codepoints.net)
 into existence! It’s my try to tackle the visualization of Unicode.
