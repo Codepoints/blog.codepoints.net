@@ -17,6 +17,10 @@ AddDefaultCharset utf-8
 <FilesMatch ".*\.(css|js|svg|png|jpe?g|gif|webp|avif|ico|woff2)">
   FileETag MTime Size
 </FilesMatch>
+
+ExpiresActive on
+ExpiresDefault "access plus 1 minute"
+
 ExpiresByType text/css "access plus 1 year"
 ExpiresByType text/javascript "access plus 1 year"
 ExpiresByType application/json "access plus 1 day"
