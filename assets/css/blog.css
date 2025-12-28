@@ -104,6 +104,10 @@ pre {
   word-break: break-all;
 }
 
+figure {
+  margin-inline: 0;
+}
+
 /* font sizes and typographic adaptions */
 
 .h1,
