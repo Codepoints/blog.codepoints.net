@@ -1,0 +1,8 @@
+---
+permalink: .htaccess
+---
+<FilesMatch "*.html">
+  Header add Link "<{{ "/assets/css/blog.css" | bust }}>; rel=preload; as=style; crossorigin"
+  Header add Link "</assets/fonts/Literata.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
+  Header add Link "</assets/fonts/Literata-Italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
+</FilesMatch>
