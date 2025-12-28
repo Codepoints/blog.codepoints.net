@@ -6,3 +6,25 @@ permalink: .htaccess
   Header add Link "</assets/fonts/Literata.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
   Header add Link "</assets/fonts/Literata-Italic.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
 </FilesMatch>
+
+ErrorDocument 404 /404.html
+
+AddType font/woff2 .woff2
+AddType image/avif .avif
+AddType image/webp .webp
+AddDefaultCharset utf-8
+
+<FilesMatch ".*\.(css|js|svg|png|jpe?g|gif|webp|avif|ico|woff2)">
+  FileETag MTime Size
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/json "access plus 1 day"
+  ExpiresByType image/avif "access plus 1 month"
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType font/woff2 "access plus 1 year"
+</FilesMatch>
