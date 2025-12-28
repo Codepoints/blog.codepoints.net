@@ -1,14 +1,14 @@
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-const Image = require("@11ty/eleventy-img");
-const markdownIt = require('markdown-it');
-const emoji = require('markdown-it-emoji').full;
-const crypto = require('crypto');
-const fs = require('fs');
+import pluginRss from '@11ty/eleventy-plugin-rss';
+import Image from '@11ty/eleventy-img';
+import markdownIt from 'markdown-it';
+import { full as emoji } from 'markdown-it-emoji';
+import crypto from 'crypto';
+import fs from 'fs';
 
 const md = markdownIt({html: true})
         .use(emoji);
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
   const outputDir = 'blog.codepoints.net';
   eleventyConfig.addPlugin(pluginRss);
 

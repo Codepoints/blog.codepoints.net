@@ -1,5 +1,3 @@
-module.exports = function() {
-  return {
-    ENV: process.env.ENV || 'production',
-  };
+export default {
+  ENV: process.env.ENV || 'production',
 };
