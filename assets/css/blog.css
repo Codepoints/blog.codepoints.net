@@ -98,6 +98,12 @@ blockquote i {
   font-style: normal;
 }
 
+pre {
+  /* fix <pre> killing page responsiveness */
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
 /* font sizes and typographic adaptions */
 
 .h1,
